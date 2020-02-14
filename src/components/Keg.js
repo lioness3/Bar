@@ -1,6 +1,6 @@
 import React from 'react';
 import keg from './images/keg2.png';
-import DropDown from './DropDown.js';
+import KegDropDown from './KegDropDown.js';
 
 
 function Keg() {
@@ -13,7 +13,7 @@ const kegStyle = {
 }
   return (
     <div className='kegStyle'>
-      <DropDown/>
+      <KegDropDown/>
       <img alt="keg" src={keg}></img>
     </div>
   );

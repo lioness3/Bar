@@ -1,8 +1,8 @@
 import React from 'react';
-import './DropDown.css';
+import './KegDropDown.css';
 
 
-function DropDown() {
+function KegDropDown() {
 
   return (
 
@@ -18,4 +18,4 @@ function DropDown() {
   );
 }
 
-export default DropDown;
+export default KegDropDown;
