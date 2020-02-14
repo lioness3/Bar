@@ -7,17 +7,25 @@ function NewInventoryForm() {
   }
   const inventorFormStyle = {
     display:'grid',
-    gridTemplateColumns:' auto auto auto',
+    gridTemplateColumns:' auto auto auto auto auto',
+    gridTemplateRows: '100px 200px',
+    textAlign:'center',
+
     gridGap:'5px' ,
      border:'1px solid black',
     position:'absolute',
     top:'200px',
-    width:'600px',
+   padding:'100px',
     backgroundColor:'grey',
 
   }
   const inventoryBtn = {
-    color:'Red'
+    color:'Red',
+    gridColumn: '1 / 6',
+    border:'30px solid white',
+    backgroundColor:'grey',
+    fontSize:'30px'
+
   }
   return (
     <div style={background}>
