@@ -1,16 +1,21 @@
 import React from 'react';
-
+import Keg from './Keg.js';
 
 function Inventory() {
   const inventoryStyle = {
 border:'3px solid blue',
-height:'200px',
+postion:'absolute',
+top:'300px',
+height:'500px',
 width:'90vw',
-margin:'auto'
+
+display:'flex',
+padding:'50px'
+
   }
   return (
     <div style={inventoryStyle}>
-      
+      <Keg/>
     </div>
   );
 }
