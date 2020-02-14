@@ -6,7 +6,8 @@ function Navigation() {
     position:'absolute',
     height:'100px',
     backgroundColor:'black',
-    width:'100vw'
+    width:'100vw',
+
   }
   return (
     <div style={Nav_bar}>
