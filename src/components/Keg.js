@@ -7,11 +7,13 @@ function Keg() {
 
   return (
     <div className='kegStyle'>
-      <button className='sold'></button>
-      <span className='soldOptions'>
+      <div className='dropDown'>
+      <button className='sold'>SOLD</button>
+      <div className='soldOptions'>
         <button className='pint'>Pint Sold</button>
         <button className='soldOut'>Sold Out</button>
-      </span>
+      </div>
+      </div>
       <img alt="keg" src={keg}></img>
 
 
