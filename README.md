@@ -12,7 +12,7 @@ This is a static application for a bar that will demonstrate the basic structure
 
 #  _Specification Chart_
 
-![chart](bar components.jpg)
+![chart](bar_components.jpg)
 
 
 
