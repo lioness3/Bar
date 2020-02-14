@@ -1,11 +1,7 @@
 
 
 
-.kegStyle{
-display:inline-block;
-padding:30px;
 
-}
 .dropDown{
   position:absolute;
   display:inline-block;
@@ -37,8 +33,10 @@ background-color: red;
 display:inline-block;
 position: absolute;
 z-index: 1;
+
 }
 .soldOptions:hover + .sold button{
   display:inline-block;
   background-color: darkblue;
+  margin:30px;
 }

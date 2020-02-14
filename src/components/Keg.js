@@ -1,22 +1,21 @@
 import React from 'react';
 import keg from './images/keg2.png';
-import './Keg.css';
+
+import DropDown from './DropDown.js';
 
 
 function Keg() {
+const kegStyle = {
 
+  display:"inline-block",
+  padding:'30px'
+
+
+}
   return (
     <div className='kegStyle'>
-      <div className='dropDown'>
-      <button className='sold'>SOLD</button>
-      <div className='soldOptions'>
-        <button className='pint'>Pint Sold</button>
-        <button className='soldOut'>Sold Out</button>
-      </div>
-      </div>
+      <DropDown/>
       <img alt="keg" src={keg}></img>
-
-
     </div>
   );
 }
