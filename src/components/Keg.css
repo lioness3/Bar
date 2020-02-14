@@ -1,0 +1,24 @@
+
+
+
+.kegStyle{
+display:inline;
+padding:30px;
+
+}
+.sold{
+  background-color: lightblue;
+}
+.soldOptions{
+  display:none;
+
+}
+.pint{
+  background-color: yellow;
+}
+.soldOut{
+background-color: red;
+}
+.sold:hover + .soldOptions{
+display:block
+}

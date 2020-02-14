@@ -7,7 +7,7 @@ border:'3px solid blue',
 postion:'absolute',
 top:'300px',
 height:'500px',
-width:'90vw',
+
 
 display:'flex',
 padding:'50px'
