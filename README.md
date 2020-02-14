@@ -12,9 +12,9 @@ This is a static application for a bar that will demonstrate the basic structure
 
 #  _Specification Chart_
 ******************
-![chart](./bar_components.jpg)
+![chart](./images/bar_components.jpg)
 ******************
-![chart](./bar_whiteboard.jpg)
+![chart](./images/bar_whiteboard.jpg)
 ******************
 #### _Instructions_
 * open project
