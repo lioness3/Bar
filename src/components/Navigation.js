@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 
 function Navigation() {
@@ -8,9 +9,12 @@ function Navigation() {
     backgroundColor:'black',
     width:'100%',
   }
+  const newInventoryStyle = {
+    padding:'50px'
+  }
   return (
     <div style={Nav_bar}>
-
+      <Link to="/new" style={newInventoryStyle}>ADD</Link>
     </div>
   );
 }

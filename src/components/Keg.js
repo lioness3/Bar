@@ -1,6 +1,5 @@
 import React from 'react';
 import keg from './images/keg2.png';
-
 import DropDown from './DropDown.js';
 
 
