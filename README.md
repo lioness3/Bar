@@ -11,7 +11,12 @@
 This is a static application for a bar that will demonstrate the basic structure of react.
 
 #  _Specification Chart_
-<mxfile host="www.draw.io" modified="2020-02-14T17:10:17.962Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="4y2VtmDwEL_c60VFETDd" version="12.7.0"><diagram id="S7pidw2WbIsJOrVxZoEj" name="Page-1">
+
+![chart](bar components.jpg)
+
+
+
+
 ******************
 #### _Instructions_
 * open project
