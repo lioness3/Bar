@@ -9,10 +9,14 @@ maxHeight:'100px',
 maxWidth:'100px',
 padding:'10px'
   }
+
+
+
   return (
     <div>
       <img style={logoStyle} alt='logo' src={logo}></img>
-
+      <span className='.glass' > </span>
+<script>{$('.glass').circleType({radius: 800})}</script>
     </div>
   );
 }
