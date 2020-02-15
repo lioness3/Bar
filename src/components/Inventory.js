@@ -12,7 +12,6 @@ function Inventory() {
     overflowX:'scroll',
     padding:'40px',
 
-
   }
 
   return (

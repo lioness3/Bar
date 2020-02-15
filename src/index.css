@@ -1,3 +1,8 @@
 body {
-cursor:url(./components/images/mug2.png), pointer;
+cursor:url(./components/images/mug6.png), pointer;
+background-image: url(./components/images/woodenBG.jpg);
+background-repeat: no-repeat;
+height:100vh;
+background-size: cover;
+backdrop-filter: sepia(30%);
 }

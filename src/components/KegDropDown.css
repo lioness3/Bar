@@ -3,7 +3,7 @@
 .dropDown{
   position:relative;
   display:inline-block;
-  margin-left: 50px;
+
 
 }
 .soldOptions{
@@ -11,21 +11,30 @@
   position: relative;
   box-shadow: 0px 20px 10px 0px rgba(0,0,0,0.6);
   z-index: 1;
-
+  border:none;
 
 }
 .sold{
-  background-color: lightblue;
+  background-color: inherit;
 margin-top: 100px;
+font-size: 40px;
+color:rgba(150,150,150,0.6);
+border:none;
 
 }
 
 .pint{
   background-color: yellow;
+font-size: 30px;
+border:none;
+margin:5px;
 
 }
 .soldOut{
 background-color: red;
+font-size: 30px;
+border:none;
+margin:5px;
 
 }
 .dropDown:hover  .soldOptions{
