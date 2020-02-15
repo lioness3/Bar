@@ -13,8 +13,7 @@ const countStyle = {
 }
   return (
     <div className='countStyle'>
-
-        <button>{props.count}</button>
+      <button>{props.count}</button>
     </div>
   );
 }

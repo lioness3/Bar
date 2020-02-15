@@ -6,14 +6,13 @@ import Menu from './Menu.js';
 
 function Navigation() {
   const Nav_bar = {
-    position:'absolute',
-
+  
     height:'100px',
     width:'100%',
     display:'grid',
     gridTemplateColumns:'100px auto auto auto',
     justifyContent: 'space-between',
-    
+    backgroundColor:'black'
   }
   const newInventoryStyle = {
     padding:'20px',

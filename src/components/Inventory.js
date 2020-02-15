@@ -6,17 +6,25 @@ function Inventory() {
 
     border:'3px solid blue',
     postion:'absolute',
-    top:'300px',
-    height:'500px',
+    top:'500px',
+    height:'1000px',
     display:'flex',
-    padding:'50px',
+    overflowX:'scroll'
+
 
   }
 
   return (
     <div style={inventoryStyle}>
       <Keg/>
-  
+      <Keg/>
+      <Keg/>
+      <Keg/>
+        <Keg/>
+        <Keg/>
+        <Keg/>
+        <Keg/>
+
     </div>
   );
 }
