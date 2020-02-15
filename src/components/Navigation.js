@@ -13,7 +13,7 @@ function Navigation() {
     display:'grid',
     gridTemplateColumns:'100px auto auto auto',
     justifyContent: 'space-between',
-
+    
   }
   const newInventoryStyle = {
     padding:'20px',

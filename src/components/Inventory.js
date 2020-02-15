@@ -10,12 +10,13 @@ function Inventory() {
     height:'500px',
     display:'flex',
     padding:'50px',
-    
+
   }
 
   return (
     <div style={inventoryStyle}>
       <Keg/>
+  
     </div>
   );
 }

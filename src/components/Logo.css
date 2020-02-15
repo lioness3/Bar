@@ -30,6 +30,7 @@
  font-size: 100px;
  font-weight:600;
  text-decoration: none;
+   filter: drop-shadow(8px 8px 10px white);
 }
 .glass:hover{
  color:purple;
