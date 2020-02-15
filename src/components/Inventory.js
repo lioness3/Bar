@@ -4,12 +4,13 @@ import Keg from './Keg.js';
 function Inventory() {
   const inventoryStyle = {
 
-    border:'3px solid blue',
+    border:'3px solid black',
     postion:'absolute',
     top:'500px',
     height:'1000px',
     display:'flex',
-    overflowX:'scroll'
+    overflowX:'scroll',
+    padding:'40px',
 
 
   }

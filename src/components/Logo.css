@@ -26,12 +26,12 @@
   }
 .glass{
  font-family: 'Girassol', cursive;
- color:#E2E2E2;
+ color:rgba(0,0,0,0.8);
  font-size: 100px;
  font-weight:600;
  text-decoration: none;
    filter: drop-shadow(8px 8px 10px grey);
 }
 .glass:hover{
- color:grey;
+ color:white;
 }

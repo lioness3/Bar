@@ -7,7 +7,7 @@ function NewInventoryForm() {
   }
   const inventorFormStyle = {
     display:'grid',
-    gridTemplateColumns:' 200px 200px 200px 200px 200px',
+    gridTemplateColumns:' auto auto auto auto auto',
     gridTemplateRows: '100px 100px 100px 200px',
     textAlign:'center',
     gridGap:'5px',

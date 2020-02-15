@@ -11,23 +11,27 @@
 This is a static application for a bar that will demonstrate the basic structure of react.
 
 #  _Specification Chart_
+* NOTE: There are plenty more components than originally planned.
 ******************
 ![chart](./images/bar_components.jpg)
 ******************
 ![chart](./images/bar_whiteboard.jpg)
 ******************
+******************
 #### _Instructions_
 * open project
-
-
-
-
+* run 'npm install'
+* run 'npm run start'
+* open 'http://localhost:3000'
 ***************
 #### _Known Bugs_
-
+* This app is currently static
 ***************
 # _Technology Used_
 * React
+* Google Fonts
+* Google Images
+* CSS
 *******
 ###### _Licensing_
 MIT public
