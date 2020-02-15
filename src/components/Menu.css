@@ -1,6 +1,7 @@
 .menuDropDown{
   position: relative;
   display: inline-block;
+  filter: drop-shadow(8px 8px 10px gray)
 }
 .menuContent{
   display: none;

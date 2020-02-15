@@ -7,7 +7,7 @@ import Menu from './Menu.js';
 function Navigation() {
   const Nav_bar = {
     position:'absolute',
-    backgroundColor:'black',
+    
     height:'100px',
     width:'100%',
     display:'grid',
