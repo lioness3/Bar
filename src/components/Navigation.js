@@ -7,12 +7,13 @@ import Menu from './Menu.js';
 function Navigation() {
   const Nav_bar = {
     position:'absolute',
-    
+
     height:'100px',
     width:'100%',
     display:'grid',
     gridTemplateColumns:'100px auto auto auto',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    
   }
   const newInventoryStyle = {
     padding:'20px',

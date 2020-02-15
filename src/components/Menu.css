@@ -1,7 +1,8 @@
 .menuDropDown{
   position: relative;
   display: inline-block;
-  filter: drop-shadow(8px 8px 10px gray)
+  filter: drop-shadow(8px 8px 10px gray);
+
 }
 .menuContent{
   display: none;
@@ -10,6 +11,7 @@ background-color: #f9f9f9;
 min-width: 160px;
 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 z-index: 1;
+
 }
 .menuContent span{
   color: black;

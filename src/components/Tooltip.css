@@ -24,3 +24,9 @@
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
+  .glass::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+
+
+  }

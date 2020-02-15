@@ -8,9 +8,10 @@ function Inventory() {
     top:'300px',
     height:'500px',
     display:'flex',
-    padding:'50px'
+    padding:'50px',
+    cursor: 'url(./images/mug.png), auto'
   }
-  
+
   return (
     <div style={inventoryStyle}>
       <Keg/>
