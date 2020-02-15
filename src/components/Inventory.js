@@ -20,10 +20,10 @@ function Inventory() {
       <Keg/>
       <Keg/>
       <Keg/>
-        <Keg/>
-        <Keg/>
-        <Keg/>
-        <Keg/>
+      <Keg/>
+      <Keg/>
+      <Keg/>
+      <Keg/>
 
     </div>
   );
