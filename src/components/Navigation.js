@@ -23,6 +23,7 @@ function Navigation() {
   return (
     <div style={Nav_bar}>
       <Logo/>
+      <Link to="/" style={{color:'yellow'}}>Home</Link>
       <Menu/>
       <Link to="/new" style={newInventoryStyle}>ADD</Link>
       <Link to="/edit" style={editInventoryStyle}>EDIT</Link>
