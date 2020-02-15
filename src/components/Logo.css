@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Girassol&display=swap');
   .tooltip {
     position: relative;
     display: inline-block;
@@ -24,9 +24,13 @@
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
-  .glass::first-letter {
-    color: #ff0000;
-    font-size: xx-large;
-
-
-  }
+.glass{
+ font-family: 'Girassol', cursive;
+ color:white;
+ font-size: 100px;
+ font-weight:600;
+ text-decoration: none;
+}
+.glass:hover{
+ color:purple;
+}

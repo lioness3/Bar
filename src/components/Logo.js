@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './images/beer1.jpg';
 import { Link } from 'react-router-dom';
-import './Tooltip.css';
+import './Logo.css';
 import mug from './images/mug.png';
 
 
@@ -15,18 +15,19 @@ padding:'10px'
 
 
 
+
   return (
     <div>
-      <div className="tooltip">Hover over me
-  <span className="tooltiptext">Tooltip text</span>
+      <div className="tooltip"><Link to='/' className='glass'> Glass</Link>
+  <span className="tooltiptext">HOME</span>
   </div>
 
-      <img style={logoStyle} alt='logo' src={logo}></img>
-      <span className='glass' > Glass</span>
-        <img  alt='logo' src={mug}></img>
+
+
     </div>
   );
 }
 
 export default Logo;
+// <img  alt='logo' src={mug}></img>
 // <script>${('.glass').circleType({radius: 800})}</script>
