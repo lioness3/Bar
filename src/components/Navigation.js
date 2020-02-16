@@ -23,13 +23,14 @@ function Navigation() {
     fontFamily:"'Roboto Slab', serif ",
     textDecoration:'none',
     fontSize: '60px',
-    color:'grey',
+    color:'rgba(215,240,243,0.7)',
+
   }
   const editInventoryStyle = {
-fontFamily:'system-ui',
+fontFamily:"'Roboto Slab', serif ",
     textDecoration:'none',
     fontSize: '60px',
-    color:'white',
+    color:'rgba(215,240,243,0.7)'
   }
   return (
     <div style={Nav_bar}>

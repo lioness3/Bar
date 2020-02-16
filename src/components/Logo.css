@@ -30,8 +30,8 @@
  font-size: 100px;
  font-weight:600;
  text-decoration: none;
-   filter: drop-shadow(8px 8px 10px grey);
+   filter: drop-shadow(8px 8px 20px lightgrey);
 }
 .glass:hover{
- color:white;
+ color:rgba(215,240,243,0.3);
 }

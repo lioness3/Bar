@@ -1,7 +1,7 @@
 import React from 'react';
 import KegDropDown from './KegDropDown.js';
 import Count from './Count.js';
-import taps from './images/taps.png';
+import coaster from './images/coaster.png';
 
 function Keg() {
 const kegStyle = {
@@ -21,7 +21,7 @@ postion:'absolute',
       <h2>Name of Beer</h2>
       <h3>Alcohol Content</h3>
       <h5>Type of Beer</h5>
-      <img alt="keg" src={taps} style={{filter: 'drop-shadow(0px 75px 20px  black) sepia(80%) grayscale(10%) opacity(90%)', postion:'absolute', zIndex:'-100'}}></img>
+      <img alt="keg" src={coaster} style={{filter: 'drop-shadow(0px 75px 20px  black) sepia(80%) grayscale(10%) opacity(90%)', postion:'absolute', zIndex:'-100'}}></img>
       <KegDropDown/>
         <Count count={10}/>
     </div>

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Girassol&display=swap');
 .menuDropDown{
   position: relative;
   display: inline-block;
@@ -5,10 +6,11 @@
 
 }
 .menuDropDownBtn{
+  font-family:'Roboto Slab', serif;
   background-color: inherit;
   border:none;
   font-size: 60px;
-  color:white;
+  color:rgba(215,240,243,0.7);
   position: relative;
 
 }
