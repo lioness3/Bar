@@ -6,3 +6,9 @@ height:100vh;
 background-size: cover;
 backdrop-filter: sepia(30%);
 }
+a{
+  cursor:url(./components/images/mug6.png), pointer;
+}
+button{
+  cursor:url(./components/images/mug6.png), pointer;
+}
