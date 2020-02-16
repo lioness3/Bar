@@ -4,9 +4,6 @@ font-size: 300px;
 text-decoration:none;
 padding:5px;
 filter: sepia(80%) drop-shadow(8px 30px 2px black);
-
-transform-origin: left top;
-transition: transform 3s;
 }
 .ageRestrictionStyle h1{
   font-size: 50px;
@@ -15,7 +12,7 @@ transition: transform 3s;
 }
 .yesOrNoLinks a:hover{
 
-transform: rotate(360deg);
+  filter:none;
 }
 .ageRestrictionStyle{
 font-family: 'Roboto Slab', serif ;

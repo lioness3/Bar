@@ -2,8 +2,9 @@ import React from 'react';
 import KegDropDown from './KegDropDown.js';
 import Count from './Count.js';
 import coaster from './images/coaster.png';
+import PropTypes from "prop-types";
 
-function Keg() {
+function Keg(props) {
 const kegStyle = {
 textAlign:'center',
 margin:'5px',
@@ -17,15 +18,22 @@ postion:'absolute',
 }
   return (
     <div style={kegStyle}>
-      <h1>BRAND</h1>
-      <h2>Name of Beer</h2>
-      <h3>Alcohol Content</h3>
-      <h5>Type of Beer</h5>
+      <h1>{props.brand}</h1>
+      <h2>{props.name}</h2>
+      <h3>{props.alcoholContent} % Alcohol Content</h3>
+      <h5>{props.type}</h5>
+      <h5>$ {props.price} per Keg</h5>
       <img alt="keg" src={coaster} style={{filter: 'drop-shadow(0px 75px 20px  black) sepia(80%) grayscale(10%) opacity(90%)', postion:'absolute', zIndex:'-100'}}></img>
       <KegDropDown/>
         <Count count={10}/>
     </div>
   );
 }
-
+Keg.propTypes = {
+  brand: PropTypes.string,
+  alcoholContent: PropTypes.number,
+  price: PropTypes.number,
+  type: PropTypes.string,
+  name: PropTypes.string
+};
 export default Keg;
