@@ -12,3 +12,6 @@ a{
 button{
   cursor:url(./components/images/mug6.png), pointer;
 }
+form , form label {
+  cursor:url(./components/images/mug6.png), pointer;
+}

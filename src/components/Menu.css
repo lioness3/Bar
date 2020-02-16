@@ -2,6 +2,7 @@
   position: relative;
   display: inline-block;
   filter: drop-shadow(8px 8px 10px black);
+  z-index: 300;
 
 }
 .menuDropDownBtn{
@@ -12,11 +13,12 @@
 }
 .menuContent{
   display: none;
-position: relative;
-background-color: grey;
+  position: absolute;
+  background-color: rgba(0,0,0,0.8);
 
-height:100vh;
-width:100%;
+  height:100vh;
+  width:100%;
+  z-index: 300;
 
 }
 .menuContent span{
@@ -24,7 +26,11 @@ width:100%;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-}
+  position: absolute;
+  z-index: 300;
+  }
 .menuDropDown:hover .menuContent {
   display: block;
+  position: relative;
+  z-index: 300;
 }

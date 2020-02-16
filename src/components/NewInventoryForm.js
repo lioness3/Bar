@@ -13,6 +13,7 @@ function NewInventoryForm() {
     gridGap:'5px',
     border:'30px outset #392921',
     position:'absolute',
+    zIndex:'-3',
   filter: 'drop-shadow(20px 20px 10px black)',
     background:'rgba(90,70,58)',
     color:'white',

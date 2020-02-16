@@ -6,6 +6,7 @@ function Inventory() {
 
     border:'3px solid black',
     postion:'absolute',
+    zIndex:'-3',
     top:'500px',
     height:'1000px',
     display:'flex',
