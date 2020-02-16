@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from './Logo.js';
 import Menu from './Menu.js';
+import './AgeRestriction.css';
 
 
 function Navigation() {
@@ -19,10 +20,10 @@ function Navigation() {
   }
   const newInventoryStyle = {
 
-    fontFamily:'system-ui',
+    fontFamily:"'Roboto Slab', serif ",
     textDecoration:'none',
     fontSize: '60px',
-    color:'white',
+    color:'grey',
   }
   const editInventoryStyle = {
 fontFamily:'system-ui',

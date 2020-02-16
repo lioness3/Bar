@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:700&display=swap');
 .yesOrNoLinks a{
 font-size: 300px;
 text-decoration:none;
@@ -11,4 +12,7 @@ filter: sepia(80%) drop-shadow(8px 30px 2px black);
 }
 .yesOrNoLinks a:hover{
 filter:none;
+}
+.ageRestrictionStyle{
+font-family: 'Roboto Slab', serif ;
 }

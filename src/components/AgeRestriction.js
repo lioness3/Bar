@@ -11,8 +11,8 @@ function AgeRestriction() {
     <div className='ageRestrictionStyle'>
       <h1>ARE YOU 21+?</h1>
       <div className='yesOrNoLinks'>
-        <Link to='/inventory'>😁</Link>
-        <Link to='/'>😩</Link>
+        <Link to='/inventory'> 😁 </Link>
+        <Link to='/'> 😩 </Link>
       </div>
     </div>
   </div>
