@@ -1,0 +1,14 @@
+.yesOrNoLinks a{
+font-size: 300px;
+text-decoration:none;
+padding:5px;
+filter: sepia(80%) drop-shadow(8px 30px 2px black);
+}
+.ageRestrictionStyle h1{
+  font-size: 50px;
+  color:lightyellow;
+  filter: drop-shadow(2px 10px 1px black);
+}
+.yesOrNoLinks a:hover{
+filter:none;
+}
