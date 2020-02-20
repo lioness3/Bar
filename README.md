@@ -13,9 +13,9 @@ This is a static application for a bar that will demonstrate the basic structure
 #  _Specification Chart_
 * NOTE: There are plenty more components than originally planned.
 ******************
-![chart](./images/bar_components.jpg)
+![chart](./components/images/bar_components.jpg)
 ******************
-![chart](./images/bar_whiteboard.jpg)
+![chart](./components/images/bar_whiteboard.jpg)
 ******************
 ******************
 #### _Instructions_
