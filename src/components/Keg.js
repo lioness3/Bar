@@ -19,18 +19,18 @@ display:'inline-block',
 height:'800px'
 }
 
-let [color, setColor] = useState('blue', colorCode )
+let [color, setColor] = useState('blue')
 let colorCode = ()=>{
   if (props.price > 3){
-    setColor('red')
+console.log('yes');
 
   }
 }
 let colorCodedByPrice = {
   color: color,
 }
-console.log(colorCode.value);
-colorCode()
+console.log(this.state.price.value);
+
   return (
     <div style={kegStyle}>
       <h1>{props.brand}</h1>
