@@ -13,8 +13,8 @@ function App() {
       <Navigation/>
       <Switch>
       <Route exact path='/' component={AgeRestriction} />
-      <Route exact path='/inventory' component={Inventory} />
-      <Route exact path='/new' component={NewInventoryForm} />
+      <Route  path='/inventory' component={Inventory} />
+      <Route  path='/new' component={NewInventoryForm} />
       <Route component={Error404} />
     </Switch>
     </div>

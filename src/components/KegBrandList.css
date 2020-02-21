@@ -1,0 +1,8 @@
+.beer{
+  margin:200px;
+display:inline-flex;
+overflow-x: scroll;
+height:100%;
+width:600px;
+border: 20px solid black;
+}
