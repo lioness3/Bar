@@ -30,7 +30,7 @@ function NewInventoryForm() {
   return (
     <div style={background}>
       <form style={inventorFormStyle}>
-      <label style={{textAlign:'center',gridColumn: '1 / 6', padding:'30px', fontSize:'40px'}}>Enter new product  information</label>
+      <label style={{textAlign:'center', gridColumn: '1 / 6', padding:'30px', fontSize:'40px'}}>Enter new product  information</label>
         <input style={{textAlign:'center', fontSize:'15px'}} type='text' id= '' placeholder= 'Brand Name'/>
         <input style={{textAlign:'center', fontSize:'15px' }} type='integer' id= '' placeholder='Alcohol Content'/>
         <input style={{textAlign:'center', fontSize:'15px' }}  type='text' id= '' placeholder= 'Type of Beer'/>
