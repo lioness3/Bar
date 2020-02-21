@@ -5,68 +5,71 @@ import './KegBrandList.css';
 var masterKegBrandList = [
   {
     brand: 'Budweiser',
-    alcoholContent: '5',
-    price: '100',
+    alcoholContent: 5,
+    price: 100,
     type:'lager',
     name:'Budweiser'
   },
   {
     brand: 'Blue Moon Brewing Co',
-    alcoholContent: '5.4',
-    price: '239',
+    alcoholContent: 5.4,
+    price: 239,
     type:'Witbeir',
     name:'Blue Moon'
 
   },
   {
     brand: 'Samuel Adams',
-    alcoholContent: '5',
-    price: '245',
+    alcoholContent: 5,
+    price: 245,
     type:'Lager',
     name:'Boston Lager'
   },
   {
+    brand: 'Budweiser',
+    alcoholContent: 5,
+    price: 100,
+    type:'lager',
+    name:'Budweiser'
+  },
+  {
+    brand: 'Blue Moon Brewing Co',
+    alcoholContent: 5.4,
+    price: 239,
+    type:'Witbeir',
+    name:'Blue Moon'
+
+  },
+  {
     brand: 'Samuel Adams',
-    alcoholContent: '5',
-    price: '245',
+    alcoholContent: 5,
+    price: 245,
     type:'Lager',
     name:'Boston Lager'
   },
   {
-    brand: 'Samuel Adams',
-    alcoholContent: '5',
-    price: '245',
-    type:'Lager',
-    name:'Boston Lager'
+    brand: 'Budweiser',
+    alcoholContent: 5,
+    price: 100,
+    type:'lager',
+    name:'Budweiser'
+  },
+  {
+    brand: 'Blue Moon Brewing Co',
+    alcoholContent: 5.4,
+    price: 239,
+    type:'Witbeir',
+    name:'Blue Moon'
+
   },
   {
     brand: 'Samuel Adams',
-    alcoholContent: '5',
-    price: '245',
-    type:'Lager',
-    name:'Boston Lager'
-  },
-  {
-    brand: 'Samuel Adams',
-    alcoholContent: '5',
-    price: '245',
-    type:'Lager',
-    name:'Boston Lager'
-  },
-  {
-    brand: 'Samuel Adams',
-    alcoholContent: '5',
-    price: '245',
-    type:'Lager',
-    name:'Boston Lager'
-  },
-  {
-    brand: 'Samuel Adams',
-    alcoholContent: '5',
-    price: '245',
+    alcoholContent: 5,
+    price: 245,
     type:'Lager',
     name:'Boston Lager'
   }
+
 
 ];
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import KegDropDown from './KegDropDown.js';
 import Count from './Count.js';
 import coaster from './images/coaster.png';
@@ -18,13 +18,26 @@ width: '600px',
 display:'inline-block',
 height:'800px'
 }
+
+let [color, setColor] = useState('blue', colorCode )
+let colorCode = ()=>{
+  if (props.price > 3){
+    setColor('red')
+
+  }
+}
+let colorCodedByPrice = {
+  color: color,
+}
+console.log(colorCode.value);
+colorCode()
   return (
     <div style={kegStyle}>
       <h1>{props.brand}</h1>
       <h2>{props.name}</h2>
       <h3>{props.alcoholContent} % Alcohol Content</h3>
       <h5>{props.type}</h5>
-      <h5>$ {props.price} per Keg</h5>
+      <h5  style={colorCodedByPrice}>$ {props.price} per Keg</h5>
       <img alt="keg" src={coaster} style={{filter: 'drop-shadow(0px 75px 20px  black) sepia(80%) grayscale(10%) opacity(90%)', postion:'relative', zIndex:'-100'}}></img>
       <KegDropDown/>
         <Count count={10}/>
@@ -36,6 +49,7 @@ Keg.propTypes = {
   alcoholContent: PropTypes.number,
   price: PropTypes.number,
   type: PropTypes.string,
-  name: PropTypes.string
+  name: PropTypes.string,
+
 };
 export default Keg;
