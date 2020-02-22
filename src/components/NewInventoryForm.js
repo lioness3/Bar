@@ -28,16 +28,23 @@ function NewInventoryForm() {
     fontSize:'30px',
     border:'none',
   }
-
+  function handleNewFormSubmission(event) {
+    event.preventDefault();
+  props.onNewInventoryCreation({brand: _brand.value, alcoholContent: _alcoholContent.value, typeBeer: _typeBeer.value, beerName: _beerName.value, id: v4();
+    _brand.value = '';
+    _alcoholContent.value = '';
+    _typeBeer.value = '';
+    _beerName
+  }
   return (
     <div style={background}>
-      <form style={inventorFormStyle} onSubmit={}>
+      <form style={inventorFormStyle} onSubmit={handleNewFormSubmission}>
       <label style={{textAlign:'center', gridColumn: '1 / 6', padding:'30px', fontSize:'40px'}}>Enter new product  information</label>
-        <input style={{textAlign:'center', fontSize:'15px'}} type='text' id= '' placeholder= 'Brand Name'/>
-        <input style={{textAlign:'center', fontSize:'15px' }} type='integer' id= '' placeholder='Alcohol Content'/>
-        <input style={{textAlign:'center', fontSize:'15px' }}  type='text' id= '' placeholder= 'Type of Beer'/>
-        <input style={{textAlign:'center', fontSize:'15px' }} type='text' id= '' placeholder= 'Name of Beer'/>
-        <input style={{textAlign:'center', fontSize:'15px' }} type='integer' id= '' placeholder='Price per Keg'/>
+        <input style={{textAlign:'center', fontSize:'15px'}} type='text' id= 'brand' placeholder= 'Brand Name' ref={(input) => {_brand = input;}}/>
+        <input style={{textAlign:'center', fontSize:'15px' }} type='integer' id= 'alcoholContent' placeholder='Alcohol Content' ref={(input) => {_alcoholContent = input;}}/>
+        <input style={{textAlign:'center', fontSize:'15px' }}  type='text' id= 'typeBeer' placeholder= 'Type of Beer' ref={(input) => {_typeBeer/>
+        <input style={{textAlign:'center', fontSize:'15px' }} type='text' id= '' placeholder= 'Name of Beer' ref={(input) => {/>
+        <input style={{textAlign:'center', fontSize:'15px' }} type='integer' id= 'beerName' placeholder='Price per Keg' ref={(input) => {_beerName/>
         <button style={inventoryBtn} type='submit'>SUBMIT</button>
       </form>
     </div>
