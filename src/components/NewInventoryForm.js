@@ -1,8 +1,12 @@
 import React, {useState} from 'react';
 import { v4 } from 'uuid';
 
-function NewInventoryForm() {
-  const [info, setInfo] = useState('');
+function NewInventoryForm(props) {
+let _brand = null;
+ let _alcoholContent = null;
+let _typeBeer = null;
+ let _beerName = null;
+ let _price = null;
   const background = {
 
   }
@@ -30,11 +34,12 @@ function NewInventoryForm() {
   }
   function handleNewFormSubmission(event) {
     event.preventDefault();
-  props.onNewCreation({brand: _brand.value, alcoholContent: _alcoholContent.value, typeBeer: _typeBeer.value, beerName: _beerName.value, id: v4();
+  props.onNewCreation({brand: _brand.value, alcoholContent: _alcoholContent.value, typeBeer: _typeBeer.value, beerName: _beerName.value, price: _price.value id: v4();
     _brand.value = '';
     _alcoholContent.value = '';
     _typeBeer.value = '';
     _beerName.value = "";
+    _price.value = '';
   }
   return (
     <div style={background}>
@@ -42,9 +47,9 @@ function NewInventoryForm() {
       <label style={{textAlign:'center', gridColumn: '1 / 6', padding:'30px', fontSize:'40px'}}>Enter new product  information</label>
         <input style={{textAlign:'center', fontSize:'15px'}} type='text' id= 'brand' placeholder= 'Brand Name' ref={(input) => {_brand = input;}}/>
         <input style={{textAlign:'center', fontSize:'15px' }} type='integer' id= 'alcoholContent' placeholder='Alcohol Content' ref={(input) => {_alcoholContent = input;}}/>
-        <input style={{textAlign:'center', fontSize:'15px' }}  type='text' id= 'typeBeer' placeholder= 'Type of Beer' ref={(input) => {_typeBeer/>
-        <input style={{textAlign:'center', fontSize:'15px' }} type='text' id= '' placeholder= 'Name of Beer' ref={(input) => {/>
-        <input style={{textAlign:'center', fontSize:'15px' }} type='integer' id= 'beerName' placeholder='Price per Keg' ref={(input) => {_beerName/>
+        <input style={{textAlign:'center', fontSize:'15px' }}  type='text' id= 'typeBeer' placeholder= 'Type of Beer' ref={(input) => {_typeBeer = input;}}/>
+        <input style={{textAlign:'center', fontSize:'15px' }} type='text' id= 'beerName' placeholder= 'Name of Beer' ref={(input) => { _beerName = input;}}/>
+        <input style={{textAlign:'center', fontSize:'15px' }} type='integer' id= 'price' placeholder='Price per Keg' ref={(input) => {_price = input;}}/>
         <button style={inventoryBtn} type='submit'>SUBMIT</button>
       </form>
     </div>
