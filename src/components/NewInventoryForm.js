@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-
+import { v4 } from 'uuid';
 
 function NewInventoryForm() {
   const [info, setInfo] = useState('');
@@ -30,11 +30,11 @@ function NewInventoryForm() {
   }
   function handleNewFormSubmission(event) {
     event.preventDefault();
-  props.onNewInventoryCreation({brand: _brand.value, alcoholContent: _alcoholContent.value, typeBeer: _typeBeer.value, beerName: _beerName.value, id: v4();
+  props.onNewCreation({brand: _brand.value, alcoholContent: _alcoholContent.value, typeBeer: _typeBeer.value, beerName: _beerName.value, id: v4();
     _brand.value = '';
     _alcoholContent.value = '';
     _typeBeer.value = '';
-    _beerName
+    _beerName.value = "";
   }
   return (
     <div style={background}>
@@ -49,8 +49,10 @@ function NewInventoryForm() {
       </form>
     </div>
   );
-  console.log(this.state.values)
 }
-
+NewInventoryForm.propTypes = {
+  onNewCreation: PropTypes.func
+};
+}
 
 export default NewInventoryForm;
