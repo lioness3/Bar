@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { v4 } from 'uuid';
-
+import PropTypes from 'prop-types';
 function NewInventoryForm(props) {
 let _brand = null;
  let _alcoholContent = null;
@@ -34,7 +34,7 @@ let _typeBeer = null;
   }
   function handleNewFormSubmission(event) {
     event.preventDefault();
-  props.onNewCreation({brand: _brand.value, alcoholContent: _alcoholContent.value, typeBeer: _typeBeer.value, beerName: _beerName.value, price: _price.value id: v4();
+  props.onNewCreation({brand: _brand.value, alcoholContent: _alcoholContent.value, typeBeer: _typeBeer.value, beerName: _beerName.value, price: _price.value, id: v4()});
     _brand.value = '';
     _alcoholContent.value = '';
     _typeBeer.value = '';
@@ -58,6 +58,6 @@ let _typeBeer = null;
 NewInventoryForm.propTypes = {
   onNewCreation: PropTypes.func
 };
-}
+
 
 export default NewInventoryForm;

@@ -29,14 +29,14 @@ console.log('yes');
 let colorCodedByPrice = {
   color: color,
 }
-console.log(this.state.price.value);
+
 
   return (
     <div style={kegStyle}>
       <h1>{props.brand}</h1>
-      <h2>{props.name}</h2>
+      <h2>{props.beerName}</h2>
       <h3>{props.alcoholContent} % Alcohol Content</h3>
-      <h5>{props.type}</h5>
+      <h5>{props.typeBeer}</h5>
       <h5  style={colorCodedByPrice}>$ {props.price} per Keg</h5>
       <img alt="keg" src={coaster} style={{filter: 'drop-shadow(0px 75px 20px  black) sepia(80%) grayscale(10%) opacity(90%)', postion:'relative', zIndex:'-100'}}></img>
       <KegDropDown/>

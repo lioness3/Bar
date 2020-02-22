@@ -1,7 +1,7 @@
 import React from 'react';
 import Keg from "./Keg.js";
 import './KegBrandList.css';
-
+import PropTypes from 'prop-types';
 var masterKegBrandList = [
   {
     brand: 'Budweiser',
@@ -73,22 +73,25 @@ var masterKegBrandList = [
 
 ];
 
-function KegBrandList(){
+function KegBrandList(props){
 
 
   return (
     <div className='beer'>
 
-    {masterKegBrandList.map((keg, index) =>
+
+    {props.kegBrandList.map((keg) =>
       <Keg brand={keg.brand}
         alcoholContent={keg.alcoholContent}
+        typeBeer={keg.typeBeer}
+        beerName={keg.beerName}
         price={keg.price}
-        type={keg.type}
-        name={keg.name}
-        key={index}/>
+        key={keg.id}/>
     )}
     </div>
   );
 }
-
+KegBrandList.propTypes = {
+  kegBrandList: PropTypes.array
+};
 export default KegBrandList;
