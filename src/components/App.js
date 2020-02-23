@@ -7,7 +7,22 @@ import { Switch, Route, Link } from 'react-router-dom';
 import Error404 from './Error404';
 import './App.css';
 
-function App() {
+
+class App extends React.Component {
+  constructor(props) {
+  super(props);
+  this.state = {
+  masterList: []
+  };
+
+  this.handleAddingNewInventoryToList = this.handleAddingNewInventoryToList.bind(this);
+
+  handleAddingNewInventoryToList(newInventory){
+  var newMasterList = this.state.masterList.slice();
+  newMasterList.push(newInventory);
+  this.setState({masterList: newMasterList});
+}
+  render(){
   return (
     <div>
       <Navigation/>
@@ -20,5 +35,5 @@ function App() {
     </div>
   );
 }
-
+}
 export default App;
