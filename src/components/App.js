@@ -1,9 +1,9 @@
 import React from 'react';
 import Navigation from './Navigation.js';
-import InventoryControl from './InventoryControl.js';
+
 import AgeRestriction from './AgeRestriction.js';
-import NewInventoryForm from './NewInventoryForm.js';
 import KegBrandList from './KegBrandList';
+import NewInventoryForm from './NewInventoryForm.js';
 import { Switch, Route, Link } from 'react-router-dom';
 import Error404 from './Error404';
 import './App.css';
@@ -29,9 +29,9 @@ class App extends React.Component {
       <Navigation/>
       <Switch>
 
-      <Route  exact path='/' render={()=> <InventoryControl onNewCreation={this.handleInventoryDisplay}/>} />
+      <Route  exact path='/' render={()=> <KegBrandList kegBrandList={this.state.masterList}/>} />
 
-      <Route  path='/new' render={()=><NewInventoryForm onNewCreation={this.handleAddingNewInventoryToList} />} />
+      <Route  path='/new' render={() =><NewInventoryForm onNewCreation={this.handleAddingNewInventoryToList} />} />
 
     </Switch>
     </div>
