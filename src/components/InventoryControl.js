@@ -3,7 +3,7 @@ import Keg from './Keg.js';
 
 import KegBrandList from './KegBrandList';
 import PropTypes from "prop-types";
-
+import NewInventoryForm from './NewInventoryForm';
 class InventoryControl extends React.Component {
 
   constructor(props) {
@@ -24,9 +24,9 @@ class InventoryControl extends React.Component {
     let currentlyVisibleContent = null;
 
     if (this.state.formVisibleOnPage){
-      currentlyVisibleContent = <NewInventoryForm onNewCreation={this.props.onNewCreation}/>;
+      currentlyVisibleContent = <NewInventoryForm />;
     } else {
-      currentlyVisibleContent = <KegBrandList    kegBrandList={this.handleInventoryDisplay}/>;
+      currentlyVisibleContent = <KegBrandList    />;
     }
     return (
       <div>
@@ -38,20 +38,5 @@ class InventoryControl extends React.Component {
 InventoryControl.propTypes = {
   onNewCreation: PropTypes.func
 };
+
 export default InventoryControl;
-class  Inventory() {
-  const inventoryStyle = {
-
-display:'flex',
-
-  }
-
-  return (
-    <div style={inventoryStyle}>
-      <KegBrandList/>
-
-    </div>
-  );
-}
-
-export default Inventory;

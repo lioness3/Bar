@@ -1,6 +1,6 @@
 import React from 'react';
 import Navigation from './Navigation.js';
-import Inventory from './Inventory.js';
+import InventoryControl from './InventoryControl.js';
 import AgeRestriction from './AgeRestriction.js';
 import NewInventoryForm from './NewInventoryForm.js';
 import KegBrandList from './KegBrandList';
@@ -29,7 +29,7 @@ class App extends React.Component {
       <Navigation/>
       <Switch>
 
-      <Route  exact path='/' render={()=> <KegBrandList kegBrandList={this.state.masterList}/>} />
+      <Route  exact path='/' render={()=> <InventoryControl onNewCreation={this.state.masterList}/>} />
 
       <Route  path='/new' render={()=><NewInventoryForm onNewCreation={this.handleAddingNewInventoryToList} />} />
 
