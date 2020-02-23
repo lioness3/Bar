@@ -29,7 +29,8 @@ class App extends React.Component {
       <Switch>
 
       <Route  path='/inventory' render={()=> <KegBrandList kegBrandList={this.state.masterList}/>} />
-      <Route  path='/new' component={NewInventoryForm} />
+          
+      <Route  path='/new' render={() =><NewInventoryForm onNewCreation={this.handleAddingNewInventoryToList} />} />
       <Route component={Error404} />
     </Switch>
     </div>
