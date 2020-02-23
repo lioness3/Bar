@@ -29,7 +29,7 @@ class App extends React.Component {
       <Navigation/>
       <Switch>
 
-      <Route  exact path='/' render={()=> <InventoryControl onNewCreation={this.state.masterList}/>} />
+      <Route  exact path='/' render={()=> <InventoryControl onNewCreation={this.handleInventoryDisplay}/>} />
 
       <Route  path='/new' render={()=><NewInventoryForm onNewCreation={this.handleAddingNewInventoryToList} />} />
 
