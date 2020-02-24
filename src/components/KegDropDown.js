@@ -1,16 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './KegDropDown.css';
 
 
 function KegDropDown() {
-
+const [count, setCount] = useState(122)
   return (
 
       <div className='dropDown'>
-        <button className='sold'>SOLD</button>
+        <button className='sold'>{count} SOLD</button>
 
         <div className='soldOptions'>
-          <button className='pint'>Pint Sold</button>
+          <button onClick={()=>setCount(count - 1)} className='pint'>Pint Sold</button>
           <button className='soldOut'>Sold Out</button>
         </div>
       </div>

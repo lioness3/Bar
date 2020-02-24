@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import KegDropDown from './KegDropDown.js';
-import Count from './Count.js';
+
 import coaster from './images/coaster.png';
 import PropTypes from "prop-types";
 
@@ -38,7 +38,7 @@ if (parseInt(props.price) > 8){
       <h5  style={colorCodedByPrice}>$ {props.price} per Keg</h5>
       <img alt="keg" src={coaster} style={{filter: 'drop-shadow(0px 75px 20px  black) sepia(80%) grayscale(10%) opacity(90%)', postion:'relative', zIndex:'-100'}}></img>
       <KegDropDown/>
-        <Count count={10}/>
+      
     </div>
   );
 }
