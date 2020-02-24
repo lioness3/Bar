@@ -18,14 +18,16 @@ width: '600px',
 display:'inline-block',
 height:'800px'
 }
+let [priceColor, setColor] = useState('red')
 
-let [color, setColor] = useState('blue');
-
-if (parseInt(props.price) > 5){
-return setColor('red');
+if (parseInt(props.price) > 8){
+ priceColor = 'yellow'
 }
+
+
+
   let colorCodedByPrice = {
-    color: color,
+    color: priceColor
   }
   return (
     <div style={kegStyle}>
