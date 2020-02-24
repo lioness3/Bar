@@ -20,14 +20,9 @@ height:'800px'
 }
 
 let [color, setColor] = useState('blue')
-let colorCode = ()=>{
-  if (props.price > 3){
-console.log('yes');
 
-  }
-}
 let colorCodedByPrice = {
-  color: color,
+color: color,
 }
 
 
@@ -50,6 +45,7 @@ Keg.propTypes = {
   price: PropTypes.number,
   type: PropTypes.string,
   name: PropTypes.string,
+  color:PropTypes.func
 
 };
 export default Keg;
