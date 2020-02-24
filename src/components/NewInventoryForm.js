@@ -33,12 +33,8 @@ let _typeBeer = null;
     fontSize:'30px',
     border:'none',
   }
-  let colorCode = ()=>{
-    if (props.price > 3){
-  return "green"
 
-    }
-  }
+
   function handleNewFormSubmission(event) {
     event.preventDefault();
   props.onNewCreation({brand: _brand.value, alcoholContent: _alcoholContent.value, typeBeer: _typeBeer.value, beerName: _beerName.value, price: _price.value, id: v4()});
@@ -48,7 +44,7 @@ let _typeBeer = null;
     _beerName.value = "";
     _price.value = '';
   }
-  console.log(props);
+
   return (
     <div style={background}>
       <form style={inventorFormStyle} onSubmit={handleNewFormSubmission}>
@@ -57,18 +53,18 @@ let _typeBeer = null;
         <input style={{textAlign:'center', fontSize:'15px' }} type='integer' id= 'alcoholContent' placeholder='Alcohol Content' ref={(input) => {_alcoholContent = input;}}/>
         <input style={{textAlign:'center', fontSize:'15px' }}  type='text' id= 'typeBeer' placeholder= 'Type of Beer' ref={(input) => {_typeBeer = input;}}/>
         <input style={{textAlign:'center', fontSize:'15px' }} type='text' id= 'beerName' placeholder= 'Name of Beer' ref={(input) => { _beerName = input;}}/>
-        <input style={{textAlign:'center', fontSize:'15px' }} type='integer' color={colorCode()} id= 'price' placeholder='Price per Keg' ref={(input) => {_price = input;}}/>
+        <input style={{textAlign:'center', fontSize:'15px' }} type='integer' id= 'price' placeholder='Price per Keg' ref={(input) => {_price = input;}}/>
         <button style={inventoryBtn} type='submit'>SUBMIT</button>
 
       </form>
     </div>
   );
-}
+
 NewInventoryForm.propTypes = {
   onNewCreation: PropTypes.func,
 
 };
 
-
+}
 
 export default NewInventoryForm;

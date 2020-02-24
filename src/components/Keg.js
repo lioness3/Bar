@@ -19,13 +19,22 @@ display:'inline-block',
 height:'800px'
 }
 
-let [color, setColor] = useState('blue')
+let [color, setColor] = useState('blue');
 
-let colorCodedByPrice = {
-color: color,
+
+let  colorCode=()=>{
+  if (props.price > 3){
+
+setColor("green")
+}else{
+  console.log('something went wrong with color change');
 }
-
-
+}
+  colorCode()
+  let colorCodedByPrice = {
+    color: color,
+  }
+ 
   return (
     <div style={kegStyle}>
       <h1>{props.brand}</h1>
@@ -44,8 +53,6 @@ Keg.propTypes = {
   alcoholContent: PropTypes.number,
   price: PropTypes.number,
   type: PropTypes.string,
-  name: PropTypes.string,
-  color:PropTypes.func
-
+  name: PropTypes.string
 };
 export default Keg;
