@@ -14,6 +14,7 @@ class App extends React.Component {
   super(props);
   this.state = {
   masterList: []
+  
   };
 
   this.handleAddingNewInventoryToList = this.handleAddingNewInventoryToList.bind(this);
@@ -23,10 +24,7 @@ class App extends React.Component {
   newMasterList.push(newInventory);
   this.setState({masterList: newMasterList});
 }
- handlePriceColor(color){
-this.setState({color})
 
-  }
   render(){
   return (
     <div>
@@ -35,7 +33,7 @@ this.setState({color})
 
       <Route  exact path='/' render={()=> <KegBrandList kegBrandList={this.state.masterList}/>} />
 
-      <Route  path='/new' render={() =><NewInventoryForm handlePriceColor={this.handlePriceColor.bind(this)} onNewCreation={this.handleAddingNewInventoryToList} />} />
+      <Route  path='/new' render={() =><NewInventoryForm onNewCreation={this.handleAddingNewInventoryToList} />} />
 
     </Switch>
     </div>

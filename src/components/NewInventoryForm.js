@@ -1,15 +1,14 @@
 import React, { useState} from 'react';
 import { v4 } from 'uuid';
 import PropTypes from 'prop-types';
+
 function NewInventoryForm(props) {
+
 let _brand = null;
  let _alcoholContent = null;
 let _typeBeer = null;
  let _beerName = null;
  let _price = null;
-  const background = {
-
-  }
 
   const inventorFormStyle = {
     display:'grid',
@@ -46,7 +45,7 @@ let _typeBeer = null;
   }
 
   return (
-    <div style={background}>
+    <div>
       <form style={inventorFormStyle} onSubmit={handleNewFormSubmission}>
       <label style={{textAlign:'center', gridColumn: '1 / 6', padding:'30px', fontSize:'40px'}}>Enter new product  information</label>
         <input style={{textAlign:'center', fontSize:'15px'}} type='text' id= 'brand' placeholder= 'Brand Name' ref={(input) => {_brand = input;}}/>
