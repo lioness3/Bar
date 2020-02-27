@@ -1,6 +1,6 @@
 import React from 'react';
 import Keg from "./Keg.js";
-import './KegBrandList.css';
+import './styles.css';
 import PropTypes from 'prop-types';
 
 function KegBrandList(props){

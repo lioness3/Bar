@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from './Logo.js';
 import Menu from './Menu.js';
-import './AgeRestriction.css';
+import './styles.css';
 
 
 function Navigation() {

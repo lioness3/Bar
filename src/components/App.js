@@ -14,7 +14,7 @@ class App extends React.Component {
   super(props);
   this.state = {
   masterList: [],
-  
+
   };
 
   this.handleAddingNewInventoryToList = this.handleAddingNewInventoryToList.bind(this);
