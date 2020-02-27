@@ -1,21 +1,35 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './styles.css';
 
 
-function KegDropDown() {
-const [count, setCount] = useState(122)
-  return (
+class KegDropDown extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 124
+    };
+this.sellPint = this.sellPint.bind(this);
+}
+ sellPint(){
+  let count;
+  this.setState({count: count -1});
+}
+
+render(){
+
+
+return(
 
       <div className='dropDown'>
-        <button className='sold'>{count} SOLD</button>
+        <button className='sold'>{this.state.count} SOLD</button>
 
         <div className='soldOptions'>
-          <button onClick={()=>setCount(count - 1)} className='pint'>Pint Sold</button>
+          <button onClick={this.sellPint()} className='pint'>Pint Sold</button>
           <button className='soldOut'>Sold Out</button>
         </div>
       </div>
-
-  );
+)
+  };
 }
 
 export default KegDropDown;
