@@ -5,18 +5,18 @@ import PropTypes from 'prop-types';
 
 function KegBrandList(props){
 
-
+console.log("Keg list ",props.count);
   return (
     <div className='beer'>
 
 
     {props.kegBrandList.map((keg) =>
-      <Keg brand={keg.brand}
+      <Keg {...props}brand={keg.brand}
         alcoholContent={keg.alcoholContent}
         typeBeer={keg.typeBeer}
         beerName={keg.beerName}
         price={keg.price}
-        sellPint={keg.count}
+
         key={keg.id}/>
     )}
     </div>

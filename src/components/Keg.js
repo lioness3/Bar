@@ -23,12 +23,10 @@ let [priceColor, setColor] = useState('red')
 if (parseInt(props.price) > 8){
  priceColor = 'yellow'
 }
-
-
-
   let colorCodedByPrice = {
     color: priceColor
   }
+  console.log("Keg",props.count);
   return (
     <div style={kegStyle}>
       <h1>{props.brand}</h1>
@@ -37,7 +35,7 @@ if (parseInt(props.price) > 8){
       <h5>{props.typeBeer}</h5>
       <h5  style={colorCodedByPrice}>$ {props.price} per Keg</h5>
       <img alt="keg" src={coaster} style={{filter: 'drop-shadow(0px 75px 20px  black) sepia(80%) grayscale(10%) opacity(90%)', postion:'relative', zIndex:'-100'}}></img>
-      <KegDropDown sellPint={props.count}/>
+      <KegDropDown sellPint={props.sellPint} count={props.count}/>
 
     </div>
   );

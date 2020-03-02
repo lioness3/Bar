@@ -23,8 +23,7 @@ this.sellPint = this.sellPint.bind(this);
   this.handleAddingNewInventoryToList = this.handleAddingNewInventoryToList.bind(this);
 }
 sellPint(){
-  let count;
-  this.setState({count: count -1});
+  let count = this.setState({count: this.state.count - 1});
 }
   handleAddingNewInventoryToList(newInventory){
   var newMasterList = this.state.masterList.slice();
@@ -33,12 +32,13 @@ sellPint(){
 }
 
   render(){
+    console.log(this.state.count);
   return (
     <div>
       <Navigation/>
       <Switch>
 
-      <Route  exact path='/' render={()=> <KegBrandList kegBrandList={this.state.masterList} sellPint={this.state.count}/>} />
+      <Route  exact path='/' render={()=> <KegBrandList kegBrandList={this.state.masterList} sellPint={this.sellPint} count={this.state.count}/>} />
 
       <Route  path='/new' render={() =><NewInventoryForm onNewCreation={this.handleAddingNewInventoryToList} />} />
 

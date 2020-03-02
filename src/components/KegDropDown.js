@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.css';
 
 
-function KegDropDown(props) {
+const KegDropDown = (props) =>{
 
 
 
@@ -12,7 +12,7 @@ return(
         <button className='sold'>{props.count} SOLD</button>
 
         <div className='soldOptions'>
-          <button onClick={() => props.sellPint()} className='pint'>Pint Sold</button>
+          <button onClick={() => props.sellPint()} className='pint'>Pint Sold{props.count}</button>
           <button className='soldOut'>Sold Out</button>
         </div>
       </div>

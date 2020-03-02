@@ -36,7 +36,7 @@ let _typeBeer = null;
 
   function handleNewFormSubmission(event) {
     event.preventDefault();
-  props.onNewCreation({brand: _brand.value, alcoholContent: _alcoholContent.value, typeBeer: _typeBeer.value, beerName: _beerName.value, price: _price.value, id: v4()});
+  props.onNewCreation({brand: _brand.value, alcoholContent: _alcoholContent.value, typeBeer: _typeBeer.value, beerName: _beerName.value, price: _price.value, id: v4(), count:props.count, sellPint:props.sellPint});
     _brand.value = '';
     _alcoholContent.value = '';
     _typeBeer.value = '';
