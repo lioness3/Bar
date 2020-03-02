@@ -14,10 +14,17 @@ class App extends React.Component {
   super(props);
   this.state = {
   masterList: [],
-
+  count: 124
   };
 
+
+
+this.sellPint = this.sellPint.bind(this);
   this.handleAddingNewInventoryToList = this.handleAddingNewInventoryToList.bind(this);
+}
+sellPint(){
+  let count;
+  this.setState({count: count -1});
 }
   handleAddingNewInventoryToList(newInventory){
   var newMasterList = this.state.masterList.slice();
@@ -31,7 +38,7 @@ class App extends React.Component {
       <Navigation/>
       <Switch>
 
-      <Route  exact path='/' render={()=> <KegBrandList kegBrandList={this.state.masterList}/>} />
+      <Route  exact path='/' render={()=> <KegBrandList kegBrandList={this.state.masterList} sellPint={this.state.count}/>} />
 
       <Route  path='/new' render={() =><NewInventoryForm onNewCreation={this.handleAddingNewInventoryToList} />} />
 

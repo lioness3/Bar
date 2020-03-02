@@ -37,15 +37,15 @@ if (parseInt(props.price) > 8){
       <h5>{props.typeBeer}</h5>
       <h5  style={colorCodedByPrice}>$ {props.price} per Keg</h5>
       <img alt="keg" src={coaster} style={{filter: 'drop-shadow(0px 75px 20px  black) sepia(80%) grayscale(10%) opacity(90%)', postion:'relative', zIndex:'-100'}}></img>
-      <KegDropDown/>
-      
+      <KegDropDown sellPint={props.count}/>
+
     </div>
   );
 }
 Keg.propTypes = {
   brand: PropTypes.string,
-  alcoholContent: PropTypes.number,
-  price: PropTypes.number,
+  alcoholContent: PropTypes.string,
+  price: PropTypes.string,
   typeBeer: PropTypes.string,
   beerName: PropTypes.string
 };

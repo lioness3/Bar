@@ -26,7 +26,7 @@ class InventoryControl extends React.Component {
     if (this.state.formVisibleOnPage){
       currentlyVisibleContent = <NewInventoryForm />;
     } else {
-   currentlyVisibleContent = <KegBrandList/>
+   currentlyVisibleContent = <KegBrandList sellPint={props.count}/>
     }
     return (
       <div>

@@ -16,6 +16,7 @@ function KegBrandList(props){
         typeBeer={keg.typeBeer}
         beerName={keg.beerName}
         price={keg.price}
+        sellPint={keg.count}
         key={keg.id}/>
     )}
     </div>
