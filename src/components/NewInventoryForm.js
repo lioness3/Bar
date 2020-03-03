@@ -42,6 +42,7 @@ let _typeBeer = null;
     _typeBeer.value = '';
     _beerName.value = "";
     _price.value = '';
+    this.props.history.push('/')
   }
 
   return (

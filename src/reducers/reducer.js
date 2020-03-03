@@ -1,14 +1,20 @@
-const reducer = (state = [], action) => {
+
+
+const reducer = (state ={count:124}, action) => {
   switch (action.type) {
     case 'SELL_PINT':
-    return[
-      ...state,
-      {
-        count: count -1
-      }
-    ]
-    default:
-     return state
+
+      return{
+
+        count: count -= 1
+
+    }
+
+    default:{
+
+      return state;
+    }
 
   }
 }
+export default reducer;
