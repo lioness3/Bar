@@ -1,12 +1,11 @@
 import React from 'react';
 import Navigation from './Navigation.js';
-
 import AgeRestriction from './AgeRestriction.js';
 import KegBrandList from './KegBrandList';
 import NewInventoryForm from './NewInventoryForm.js';
 import { Switch, Route, Link } from 'react-router-dom';
 import Error404 from './Error404';
-import './App.css';
+
 
 
 class App extends React.Component {
@@ -18,13 +17,15 @@ class App extends React.Component {
   };
 
 
+  this.sellPint = this.sellPint.bind(this);
 
-this.sellPint = this.sellPint.bind(this);
   this.handleAddingNewInventoryToList = this.handleAddingNewInventoryToList.bind(this);
 }
+
 sellPint(){
   let count = this.setState({count: this.state.count - 1});
 }
+
   handleAddingNewInventoryToList(newInventory){
   var newMasterList = this.state.masterList.slice();
   newMasterList.push(newInventory);
@@ -32,7 +33,7 @@ sellPint(){
 }
 
   render(){
-    console.log(this.state.count);
+
   return (
     <div>
       <Navigation/>
