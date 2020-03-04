@@ -9,7 +9,7 @@ function Navigation() {
   const Nav_bar = {
     padding:' 20px',
     height:'100px',
-    width:'100%',
+    width:'100vw',
     display:'grid',
     gridTemplateColumns:'100px auto auto auto',
     justifyContent: 'space-around',

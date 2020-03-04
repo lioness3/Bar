@@ -2,7 +2,8 @@
   .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+    font-size: 20px;
+
   }
 
   /* Tooltip text */
@@ -12,10 +13,7 @@
     background-color: black;
     color: #fff;
     text-align: center;
-    padding: 5px 0;
     border-radius: 6px;
-
-    /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
   }
@@ -30,7 +28,7 @@
  font-size: 100px;
  font-weight:600;
  text-decoration: none;
-   filter: drop-shadow(8px 8px 20px lightgrey);
+  filter: drop-shadow(8px 8px 20px lightgrey);
 }
 .glass:hover{
  color:rgba(215,240,243,0.3);

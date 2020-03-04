@@ -21,14 +21,18 @@ font-family: 'Roboto Slab', serif ;
 
 
 /* KEG BRAND LIST STYLES */
+.noBeer{
+  display:none;
+}
 .beer{
-  margin:200px;
+margin:200px;
 display:inline-flex;
 overflow-x: scroll;
 height:100%;
-width:600px;
+width:100%;
 border: 20px solid black;
 }
+
 
 
 /* KEG DROP DOWN STYLES */

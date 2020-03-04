@@ -4,12 +4,15 @@ import './styles.css';
 import PropTypes from 'prop-types';
 
 function KegBrandList(props){
-
-console.log("Keg list ",props.count);
+let toggle = 'noBeer'
+if (props.kegBrandList.length !== 0){
+  toggle = 'beer'
+}
+console.log(props.kegBrandList);
   return (
-    <div className='beer'>
-
-
+    <div>
+      <div style={{color:'white'}}>{props.kegBrandList}</div>
+    <div className={toggle}>
     {props.kegBrandList.map((keg) =>
       <Keg {...props}brand={keg.brand}
         alcoholContent={keg.alcoholContent}
@@ -19,6 +22,7 @@ console.log("Keg list ",props.count);
 
         key={keg.id}/>
     )}
+    </div>
     </div>
   );
 }
