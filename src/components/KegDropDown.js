@@ -5,14 +5,14 @@ import './styles.css';
 const KegDropDown = (props) =>{
 
 
-
+console.log('kegdrop',props.count);
 return(
 
       <div className='dropDown'>
-        <button className='sold'>{props.count} SOLD</button>
+        <button className='sold'> SOLD</button>
 
         <div className='soldOptions'>
-          <button onClick={() => props.sellPint()} className='pint'>Pint Sold{props.count}</button>
+          <button onClick={() => props.sellPint} className='pint'>Pint Sold</button>
           <button className='soldOut'>Sold Out</button>
         </div>
       </div>

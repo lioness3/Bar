@@ -20,6 +20,21 @@ font-family: 'Roboto Slab', serif ;
 }
 
 
+/* KEG STYLE  */
+.kegStyle{
+text-align:center;
+margin:10px;
+background: rgba(0,0,0,0.5);
+color:rgba(200,200,200,.6);
+text-shadow:10px 8px 1px black;
+filter:none !importnant;
+font-size: 20px;
+padding:10px;
+width: 600px;
+display:inline-block;
+height:800px
+}
+
 /* KEG BRAND LIST STYLES */
 .noBeer{
   display:none;
@@ -30,7 +45,7 @@ display:inline-flex;
 overflow-x: scroll;
 height:100%;
 width:100%;
-border: 20px solid black;
+
 }
 
 

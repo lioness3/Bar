@@ -29,5 +29,3 @@ padding:'10px'
 }
 
 export default Logo;
-// <img  alt='logo' src={mug}></img>
-// <script>${('.glass').circleType({radius: 800})}</script>

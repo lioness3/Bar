@@ -1,11 +1,11 @@
-body {
+html {
 cursor:url(./components/images/mug6.png), pointer;
 background-image: url(./components/images/woodenBG.jpg);
-background-repeat: no-repeat;
+
 background-size: cover;
-backdrop-filter: sepia(30%);
 margin: 0;
 height:100vh;
+backdrop-filter: sepia(30%);
 
 }
 a{
